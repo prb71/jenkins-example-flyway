@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Verify version') {
       steps {
-        sh 'sudo docker run --rm flyway/flyway:9.10.0 version'
+        sh 'docker run --rm flyway/flyway:9.10.0 version'
       }
     }
   }
